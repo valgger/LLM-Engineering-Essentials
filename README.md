@@ -1,6 +1,8 @@
 # LLM Engineering Essentials course by Nebius Academy
 
-**The course is under construction, with new materials appearing regularly**
+**The course is under construction, with new materials appearing regularly. 
+
+**Subscribe for updates and make sure you don’t miss anything: [Stay updated](https://academy.nebius.com/llm-engineering-essentials/update/)**
 
 This is an open course on using and deploying LLM APIs and open-source LLMs.
 
