@@ -1,4 +1,4 @@
-# LLM Engineering Essentials course
+# LLM Engineering Essentials course by Nebius Academy
 
 **The course is under construction, with new materials appearing regularly**
 
