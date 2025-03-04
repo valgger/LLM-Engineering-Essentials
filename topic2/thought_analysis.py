@@ -15,7 +15,7 @@ def extract_think_section(text):
     return text  # Return original text if no think tags
 
 # Improved function to split the solution into individual thought blocks
-def split_into_thoughts(solution_text, min_split_size=50):
+def split_into_thoughts(solution_text, min_split_size=120):
     """
     Split solution text into thought blocks based on:
     1. Paragraphs (with minimum size requirement)
@@ -462,7 +462,7 @@ def visualize_token_counts(connections, output_dir="."):
     }
 
 # Main function to run the analysis
-def analyze_solution_thoughts(solution_text, client, model, tokenizer=None, output_dir=".", min_split_size=50):
+def analyze_solution_thoughts(solution_text, client, model, tokenizer=None, output_dir=".", min_split_size=120):
     """
     Analyze the solution text and split it into thought fragments.
     
