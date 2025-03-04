@@ -1,9 +1,5 @@
 # Alignment and Advanced Training Techniques
 
-## What makes an LLM? Part 3: the problem of alignment
-
-$\symbol{"221E}$
-
 After SFT, an LLM is able to respond to complex instructions, but we still haven't reached “perfection” just yet. First of all, we need to make the LLM harmless. What are we getting at here? Well, to give a few examples, at this point, a model could:
 
 * Create explicit content – maybe even in response to an innocent prompt!
