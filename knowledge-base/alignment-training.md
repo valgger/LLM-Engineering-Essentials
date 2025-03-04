@@ -45,7 +45,7 @@ A trainable **reward model** formalizes human preferences in an LLM-training-fri
 
 by encouraging
 
-$$r(`prompt, preferred continuation`) > r(`prompt, rejected continuation`).$$
+$$r(prompt, preferred\ continuation) > r(prompt, rejected\ continuation).$$
 
 That is, $r(x, y)$ is a **ranking model**. 
 
@@ -187,7 +187,7 @@ Reinforcement Learning is a capricious tool, so there have been several attempts
 
 2. **DPO** (**Direct preference optimization**):
    * Uses some math to suggest an internal reward model that doesn't take into account human preferences. It turns out to be very simple and it roughly says: 
-     "*A continuation $y$ is better for a prompt $x$ if $y$ is more likely to be generated from $x$ by the LLM*".
+     "*A continuation* $y$ *is better for a prompt* $x$ *if* $y$ *is more likely to be generated from* $x$ *by the LLM*".
    * It then takes the `(prompt, preferred_continuation, rejected_continuation)` dataset and trains the LLM on it in a simple supervised way to ensure that, roughly speaking, the preferred continuation is more likely to be generated from the prompt than the rejected one*.
 
 Again, more about this in the Math of RLHF and DPO long read.
