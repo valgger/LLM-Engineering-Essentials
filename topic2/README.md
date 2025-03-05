@@ -14,7 +14,7 @@
 
   Examine AI reasoning’s strengths and limitations and explore whether LLM "thinking" truly mirrors human cognitive processes.
 
-* **R.2. Inference-Time Compute** [colab link](https://colab.research.google.com/github/Nebius-Academy/LLM-Engineering-Essentials/blob/main/topic2/1.6_inference_time_compute.ipynb)
+* **R.2. Inference-Time Compute** [colab link](https://colab.research.google.com/github/Nebius-Academy/LLM-Engineering-Essentials/blob/main/topic2/r.2_inference_time_compute.ipynb)
   
   Make LLMs more effective with advanced orchestration techniques. Explore how to choose wisely between different approaches — using a larger model or a smaller one with a more sophisticated strategy.
 
