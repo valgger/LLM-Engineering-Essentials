@@ -366,9 +366,8 @@ Final answer thought ID: {last_thought_id}
     if thoughts_with_tokens > 0:
         summary += f"\nToken Statistics:\n-----------------\n"
         summary += f"Total tokens: {total_tokens}\n"
-        summary += f"Average tokens per thought: {total_tokens / thoughts_with_tokens:.1f}\n"
+        summary += f"Average tokens per thought: {total_tokens / (thoughts_with_tokens - 1):.1f}\n"
     
-    summary += f"\nNote: Branch nodes are nodes TO WHICH multiple thoughts connect.\n"
     
     # Save the summary
     with open(summary_path, 'w', encoding='utf-8') as f:
