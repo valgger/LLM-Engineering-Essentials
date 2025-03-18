@@ -561,7 +561,6 @@ class EnvironmentFactory:
             Door(103, "A golden door that gleams in the light.", (1, 4), locked=True, key_id=201),
             Door(104, "A door made of some strange metal that seems to shift colors.", (2, 5)),
             Door(105, "A simple wooden door with a silver handle.", (2, 6), locked=True, key_id=204),
-            Door(106, "A door formed from what appears to be solid crystal.", (3, 5), locked=True, key_id=202),
             Door(107, "A door with a complex mechanical lock.", (3, 7)),
             Door(108, "A door with the image of a roaring lion.", (4, 6)),
             Door(109, "A small hidden door behind a tapestry.", (5, 7), locked=True, key_id=205),
