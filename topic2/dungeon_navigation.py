@@ -427,7 +427,7 @@ class DungeonNavigationEnvironment:
         """
         return self.initialize_agent(agent_id)
     
-    def clone(self) -> 'Environment':
+    def clone(self) -> 'DungeonNavigationEnvironment':
         """Create a deep copy of the environment."""
         return copy.deepcopy(self)
 
@@ -436,14 +436,14 @@ class EnvironmentFactory:
     """Factory class to create different environment configurations."""
     
     @staticmethod
-    def create_simple_environment() -> Environment:
+    def create_simple_environment() -> DungeonNavigationEnvironment:
         """
         Create a simple environment with 3 rooms, 2 doors (1 locked), and 1 key.
         
         Returns:
             A simple adventure environment
         """
-        env = Environment("Simple Dungeon")
+        env = DungeonNavigationEnvironment("Simple Dungeon")
         
         # Create rooms
         starting_room = Room(1, "A small, dimly lit chamber with stone walls. Dust motes dance in the air, and cobwebs adorn the corners.")
@@ -474,14 +474,14 @@ class EnvironmentFactory:
         return env
     
     @staticmethod
-    def create_medium_environment() -> Environment:
+    def create_medium_environment() -> DungeonNavigationEnvironment:
         """
         Create a medium complexity environment with 5 rooms, 6 doors (3 locked), and 4 keys (including a red herring).
         
         Returns:
             A medium complexity adventure environment
         """
-        env = Environment("Medium Dungeon")
+        env = DungeonNavigationEnvironment("Medium Dungeon")
         
         # Create rooms
         entrance = Room(1, "A grand entrance hall with faded tapestries and a dusty chandelier hanging from the ceiling.")
@@ -531,14 +531,14 @@ class EnvironmentFactory:
         return env
     
     @staticmethod
-    def create_complex_environment() -> Environment:
+    def create_complex_environment() -> DungeonNavigationEnvironment:
         """
         Create a complex environment with 8 rooms, 12 doors (6 locked), and multiple keys including red herrings.
         
         Returns:
             A complex adventure environment
         """
-        env = Environment("Complex Dungeon")
+        env = DungeonNavigationEnvironment("Complex Dungeon")
         
         # Create rooms
         entrance = Room(1, "The entrance chamber to an ancient temple. Huge stone pillars support the ceiling, carved with images of forgotten deities.")
@@ -615,7 +615,7 @@ class EnvironmentFactory:
         num_doors: int = 8,
         lock_percentage: float = 0.4,
         red_herring_keys: int = 1
-    ) -> Environment:
+    ) -> DungeonNavigationEnvironment:
         """
         Create a customized randomly generated environment.
         
@@ -628,7 +628,7 @@ class EnvironmentFactory:
         Returns:
             A randomly generated environment
         """
-        env = Environment(f"Custom Environment ({num_rooms} rooms)")
+        env = DungeonNavigationEnvironment(f"Custom Environment ({num_rooms} rooms)")
         
         # Room descriptions for random generation
         room_descriptions = [
