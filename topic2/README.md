@@ -22,4 +22,10 @@
 
   Understand how models like DeepSeek-R1 develop reasoning abilities. Take a closer look at the data collection and training strategies that shape their performance.
   
-* 2.3. LLM Agents (Will be available later)
+* **A.1. LLM Tools and Agents** [colab link](https://colab.research.google.com/github/Nebius-Academy/LLM-Engineering-Essentials/blob/main/topic2/a.1_llm_tools_and_agents.ipynb)
+
+  Learn how LLMs use tools and function calling to extend their capabilities.
+
+* **A.2. Agentic Orchestration** [colab link](https://colab.research.google.com/github/Nebius-Academy/LLM-Engineering-Essentials/blob/main/topic2/a.1_llm_tools_and_agents.ipynb)
+
+  Advance past manual LLM orchestration and start designing AI-driven workflows.
