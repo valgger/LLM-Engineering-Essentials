@@ -71,7 +71,7 @@ For updates, you can also subscribe to our newsletter.
 
 # Meet our team
 
-Led by ML expert Stanislav Fedotov, this course was created by a team of AI practitioners dedicated to making AI education accessible and keeping professionals ahead in the field:
+Led by ML expert **Stanislav Fedotov**, this course was created by a team of AI practitioners dedicated to making AI education accessible and keeping professionals ahead in the field:
 
 **Alexey Bukhtiyarov**
 
