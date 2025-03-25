@@ -22,13 +22,13 @@ Study advanced concepts and apply your new knowledge right away.
 
 Join live sessions to connect with peers and course experts, reinforcing your learning.
 
-**[Topic 1️⃣ LLM API Basics] (https://github.com/Nebius-Academy/LLM-Engineering-Essentials/tree/main/topic1)**
+**[Topic 1️⃣ LLM API Basics](https://github.com/Nebius-Academy/LLM-Engineering-Essentials/tree/main/topic1)**
 
 Basics of LLM and Multimodal LLM API usage and prompt strategies, typical problems arising with LLMs, creativity-vs-reproducibility control.
 
 **Project**: Creating a chatbot and deploying it in a cloud.
 
-**[Topic 2️⃣ LLM Workflows] (https://github.com/Nebius-Academy/LLM-Engineering-Essentials/tree/main/topic2)**
+**[Topic 2️⃣ LLM Workflows](https://github.com/Nebius-Academy/LLM-Engineering-Essentials/tree/main/topic2)**
 
 LLM Workflows and beyond: from Chaining to AI Agents. LLM Reasoning.
 
