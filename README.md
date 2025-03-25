@@ -19,31 +19,31 @@ Any technical issues, ideas, bugs in course materials, contribution ideas - add 
 
 Basics of LLM and Multimodal LLM API usage and prompt strategies, typical problems arising with LLMs, creativity-vs-reproducibility control.
 
-Project: Creating a chatbot and deploying it in a cloud.
+**Project**: Creating a chatbot and deploying it in a cloud.
 
 # Topic 2. LLM Workflows
 
 LLM Workflows and beyond: from Chaining to AI Agents. LLM Reasoning.
 
-Project: Planning and memory summarization; Automating evaluation.
+**Project**: Planning and memory summarization; Automating evaluation.
 	
 # Topic 3. Context
 
 RAG and its technicalities; vector stores, databases in production. RAG evaluation.
 
-Project: Adding RAG to the NPC Factory service.
+**Project**: Adding RAG to the NPC Factory service.
 
 # Topic 4. Self-Served LLMs
 	
 Working with open source LLMs and practical LLM inference in production. Computational and memory bottlenecks of LLM inference.
 
-Project:	Deploying a chat service based on a self-served LLM. Serving text encoders and rerankers. Making a cost-to-value choice between API and self-served LLMs.
+**Project**: Deploying a chat service based on a self-served LLM. Serving text encoders and rerankers. Making a cost-to-value choice between API and self-served LLMs.
 	
 # Topic 5. Optimization and Monitoring
 
 Optimizing LLM inference, quantization and beyond. Production monitoring and observability.
 	
-Project: Optimizing open source LLM inference. Establishing monitoring with Evidently AI, Prometeus and Grafana.
+**Project**: Optimizing open source LLM inference. Establishing monitoring with Evidently AI, Prometeus and Grafana.
 	
 # Topic 6. Fine Tuning
 
