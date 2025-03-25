@@ -1,19 +1,22 @@
 # LLM Engineering Essentials course by Nebius Academy
 
-**The course is under construction, with new materials appearing regularly.**
+**The course is under development, with new materials appearing regularly.**
 
 **Subscribe for updates and make sure you don’t miss anything: [Stay updated](https://academy.nebius.com/llm-engineering-essentials/update/)**
 
-This is an open course on using and deploying LLM APIs and open-source LLMs.
+Get hands-on with LLM APIs and self-hosted models as you code, experiment, and build your own platform for custom AI-powered NPCs.
+
+This 12-week course, created by experts from academia and industry, is designed specifically for developers and engineers. You’ll have a chance to get guidance from experienced pros, join regular Q&A sessions to stay on track, and connect with peers along the way.
 
 Materials for each topic can be found in the ./topic* folders. See README.md for further details and instructions.
 
-The course includes a capstone project: NPC (Non-Playable Character) Factory Development. In this project, you'll build a service based on either an LLM API or an open-source LLM to provide NPC interactions for users. You'll go through the entire process, from personalizing a chat bot to making a cost-and-quality decision between using an API or hosting an LLM on your own servers.
-
-
 Any technical issues, ideas, bugs in course materials, contribution ideas - add an issue.
 
-# Syllabus
+# Course roadmap
+
+Study advanced concepts and apply your new knowledge right away.
+
+Join live sessions to connect with peers and course experts, reinforcing your learning.
 
 # Topic 1. LLM API Basics
 
@@ -51,3 +54,31 @@ Fine tuning of LLMs and embeddings. Parameter-Efficient Fine Tuning and LoRA. RL
 	
 Project: Making your characters even more alive through fine tuning
 
+# NPC Factory Project
+
+During the course, you'll build a platform that serves intelligent, believable, reactive, and autonomous NPCs — non-player characters at the heart of immersive games, driving engaging interactions and making worlds feel rich and dynamic.
+
+- Deploy models on real servers and integrate them into game environments.
+- Implement agentic capabilities, enabling NPCs to set goals and adapt dynamically.
+- Build scalable APIs to support complex game interactions.
+- Optimize performance, monitor behavior, and fine-tune models for smooth, responsive gameplay.
+
+# Join the community
+
+Connect with experts, engage in discussions, ask questions, and share insights, experiences, and feedback with fellow learners on Discord. Stay in the loop — live session announcements will be posted there, too!
+
+For updates, you can also subscribe to our newsletter.
+
+# Meet our team
+
+Led by ML expert Stanislav Fedotov, this course was created by a team of AI practitioners dedicated to making AI education accessible and keeping professionals ahead in the field:
+
+**Alexey Bukhtiyarov**
+
+**Nikita Pavlichenko**
+
+**Sergei Petrov**
+
+**Sergei Skvortsov**
+
+**Alex Umnov**
