@@ -22,37 +22,37 @@ Study advanced concepts and apply your new knowledge right away.
 
 Join live sessions to connect with peers and course experts, reinforcing your learning.
 
-**[Topic 1️⃣ LLM API Basics](https://github.com/Nebius-Academy/LLM-Engineering-Essentials/tree/main/topic1)**
+### [Topic 1️⃣ LLM API Basics](https://github.com/Nebius-Academy/LLM-Engineering-Essentials/tree/main/topic1)
 
 Basics of LLM and Multimodal LLM API usage and prompt strategies, typical problems arising with LLMs, creativity-vs-reproducibility control.
 
 **Project**: Creating a chatbot and deploying it in a cloud.
 
-**[Topic 2️⃣ LLM Workflows](https://github.com/Nebius-Academy/LLM-Engineering-Essentials/tree/main/topic2)**
+### [Topic 2️⃣ LLM Workflows](https://github.com/Nebius-Academy/LLM-Engineering-Essentials/tree/main/topic2)
 
 LLM Workflows and beyond: from Chaining to AI Agents. LLM Reasoning.
 
 **Project**: Planning and memory summarization; Automating evaluation.
 	
-**Topic 3️⃣ Context**
+### Topic 3️⃣ Context
 
 RAG and its technicalities; vector stores, databases in production. RAG evaluation.
 
 **Project**: Adding RAG to the NPC Factory service.
 
-**Topic 4️⃣ Self-Served LLMs**
+### Topic 4️⃣ Self-Served LLMs
 	
 Working with open source LLMs and practical LLM inference in production. Computational and memory bottlenecks of LLM inference.
 
 **Project**: Deploying a chat service based on a self-served LLM. Serving text encoders and rerankers. Making a cost-to-value choice between API and self-served LLMs.
 	
-**Topic 5️⃣ Optimization and Monitoring**
+### Topic 5️⃣ Optimization and Monitoring
 
 Optimizing LLM inference, quantization and beyond. Production monitoring and observability.
 	
 **Project**: Optimizing open source LLM inference. Establishing monitoring with Evidently AI, Prometeus and Grafana.
 	
-**Topic 6️⃣ Fine-Tuning**
+### Topic 6️⃣ Fine-Tuning
 
 Fine-tuning of LLMs and embeddings. Parameter-Efficient Fine-Tuning and LoRA. RLHF and DPO
 	
