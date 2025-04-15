@@ -557,9 +557,56 @@ class HNSWVisualizer:
         display(Image(filename))
         
         return filename
-    
-    def perform_search_demo(self, query_point, k=3, ef_search=None, create_animation=False,
-                            filename="hnsw_search.gif"):
+
+    def perform_construction_demo(self, points=None, incremental=True, filename='hnsw_construction.gif', fps=1, dpi=100):
+        """
+        Build the HNSW graph with the provided points and create an animation of the construction process.
+        
+        Parameters:
+        -----------
+        points : numpy.ndarray or None
+            Array of points to add to the graph. If None, uses existing points if any.
+        incremental : bool
+            If True, builds the graph incrementally. If False, uses batch construction.
+        filename : str
+            Filename for the animation
+        fps : int
+            Frames per second in the output GIF
+        dpi : int
+            Resolution of the output GIF
+        
+        Returns:
+        --------
+        str
+            Filename of the created animation
+        """
+        # Check if we have points to add
+        if points is None:
+            if len(self.hnsw.get_points()) == 0:
+                raise ValueError("No points provided and HNSW structure is empty.")
+            # If points already exist in the HNSW structure, just create the animation
+            return self.create_animation(filename=filename, fps=fps, dpi=dpi)
+        
+        # Clear existing HNSW structure if we're adding new points
+        if len(self.hnsw.get_points()) > 0:
+            # Reset HNSW structure (reinitialize the graphs)
+            self.hnsw.graphs = [nx.Graph() for _ in range(self.hnsw.n_layers)]
+            self.hnsw.points = []
+        
+        # Build the graph with the provided points
+        if incremental:
+            # Build incrementally (add one point at a time)
+            for point in points:
+                self.hnsw.add_point(point)
+        else:
+            # Build all at once
+            self.hnsw.build_from_points(points)
+        
+        # Create and return the animation
+        return self.create_animation(filename=filename, fps=fps, dpi=dpi)
+
+    def perform_search_demo(self, query_point, k=3, ef_search=None, entry_point=None,
+                            create_animation=False, filename="hnsw_search.gif"):
         """
         Perform a search and visualize the result.
         
@@ -583,7 +630,8 @@ class HNSWVisualizer:
         self.search_states = []
         
         # Call the search method from the HNSW structure
-        nearest_neighbors = self.hnsw.find_nearest_neighbors(query_point, k, ef_search)
+        nearest_neighbors = self.hnsw.find_nearest_neighbors(query_point, k, 
+                                                             ef_search, entry_point)
         
         # Store the result
         self.current_search_query = query_point
