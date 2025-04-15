@@ -88,7 +88,6 @@ class HNSW:
     def search_layer(self, G, query_point, entry_points, ef, layer=None):
         """
         Search for nearest neighbors in a single layer using beam search.
-        Implementation based on the provided approach.
         
         Parameters:
         -----------
