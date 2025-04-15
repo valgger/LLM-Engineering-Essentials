@@ -88,6 +88,7 @@ class HNSW:
     def search_layer(self, G, query_point, entry_points, ef, layer=None):
         """
         Search for nearest neighbors in a single layer using beam search.
+        Implementation based on the provided approach.
         
         Parameters:
         -----------
@@ -188,7 +189,8 @@ class HNSW:
         
         return nearest_neighbors
     
-    def find_nearest_neighbors(self, query_point, k=1, ef_search=None):
+    def find_nearest_neighbors(self, query_point, k=1,
+                               ef_search=None, entry_point=None):
         """
         Find k nearest neighbors to a query point using the HNSW structure.
         
@@ -221,8 +223,23 @@ class HNSW:
         if top_layer < 0:
             return []
         
-        # Select random entry point in the top layer
-        entry_points = [random.choice(list(self.graphs[top_layer].nodes()))]
+        # Select entry point - either user-specified or a random node
+        if entry_point is not None:
+            # Find the highest layer containing the entry point
+            entry_layer = top_layer
+            while entry_layer >= 0 and entry_point not in self.graphs[entry_layer].nodes():
+                entry_layer -= 1
+            
+            if entry_layer >= 0:
+                # Use specified entry point if it exists in the graph
+                top_layer = entry_layer
+                entry_points = [entry_point]
+            else:
+                # Fall back to random entry point if specified one doesn't exist
+                entry_points = [random.choice(list(self.graphs[top_layer].nodes()))]
+        else:
+            # Use random entry point (original behavior)
+            entry_points = [random.choice(list(self.graphs[top_layer].nodes()))]
         
         # Trigger search_process_started callback
         self._trigger_callback('search_process_started',
