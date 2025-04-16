@@ -180,7 +180,7 @@ class HNSWVisualizer:
             # Only include nodes that have a valid index in the points array
             pos = {}
             for node in graph.nodes():
-                if isinstance(node, int) and 0 <= node < len(points):
+                if isinstance(node, int) and node >= 0 and node < len(points):
                     pos[node] = points[node]
         
         # Get list of nodes that have valid positions
@@ -630,8 +630,10 @@ class HNSWVisualizer:
         self.search_states = []
         
         # Call the search method from the HNSW structure
-        nearest_neighbors = self.hnsw.find_nearest_neighbors(query_point, k, 
-                                                             ef_search, entry_point)
+        nearest_neighbors = self.hnsw.find_nearest_neighbors(
+            query_point=query_point, k=k, 
+            ef_search=ef_search, entry_point=entry_point
+            )
         
         # Store the result
         self.current_search_query = query_point
