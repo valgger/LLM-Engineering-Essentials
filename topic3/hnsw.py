@@ -215,7 +215,6 @@ class HNSW:
         ef_search = ef_search if ef_search is not None else self.ef_construction
         ef_search = max(ef_search, k)
         
-        # Start from a random point in the top layer
         top_layer = self.n_layers - 1
         while top_layer >= 0 and len(self.graphs[top_layer].nodes()) == 0:
             top_layer -= 1
@@ -250,7 +249,7 @@ class HNSW:
         # Search from top to bottom layer
         for layer in range(top_layer, -1, -1):
             G = self.graphs[layer]
-            ef = ef_search if layer == 0 else self.ef_construction
+            ef = ef_search
             entry_points = self.search_layer(G, query_point, entry_points, ef, layer)
         
         # Trigger search_process_completed callback
@@ -279,8 +278,12 @@ class HNSW:
         point_idx = len(self.points)
         self.points.append(point)
         
-        # Select top layer for this point
-        top_layer = self._select_top_layer()
+        # For the first point (point_idx = 0), add to all layers
+        # Otherwise, select a top layer probabilistically
+        if point_idx == 0:
+            top_layer = self.n_layers - 1  # Add to all layers
+        else:
+            top_layer = self._select_top_layer()
         
         # Trigger point_adding callback
         self._trigger_callback('point_adding',
