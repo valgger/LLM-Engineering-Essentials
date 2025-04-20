@@ -634,18 +634,16 @@ Keep your questions concise and focused on key aspects like:
     
     Your report should include:
     1. Executive Summary
-    2. Introduction to the research question
-    3. Methodology (briefly describing search approach)
-    4. Key Findings (organized by themes or sub-topics)
-    5. Analysis and Discussion
-    6. Conclusion
-    7. References (properly formatted and cited)
+    2. Key Findings (organized by themes or sub-topics)
+    3. Analysis and Discussion
+    4. Conclusion
+    5. References (properly formatted and cited)
     
     Guidelines:
     - Format the report in clean, proper markdown
+    - Ensure that your report answers user's question
     - Include headings, subheadings, bullet points, and other formatting for readability
     - Synthesize information from multiple sources rather than quoting directly
-    - Highlight areas of consensus and disagreement in the research
     - Remain objective and balanced in your analysis
     - Cite sources appropriately throughout the report using footnotes or endnotes
     - Ensure the report is comprehensive but concise"""
