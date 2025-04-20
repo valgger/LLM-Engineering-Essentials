@@ -155,7 +155,7 @@ Keep your questions concise and focused on key aspects like:
             self._log(user_id, search_id, "error", error_msg)
             return "I'd like to help with your research, but I need to ask a few questions first to better understand what you're looking for. Could you provide more details about your topic?"
     
-    async def process_user_response(self, user_id: str, search_id: str, response: str) -> Dict[str, Any]:
+    async def _process_user_response(self, user_id: str, search_id: str, response: str) -> Dict[str, Any]:
         """
         Process user's response to clarifying questions or additional information.
         
@@ -740,4 +740,4 @@ Keep your questions concise and focused on key aspects like:
         session = self.research_sessions.get((user_id, search_id), {})
         
         # Process the message as a response to the current research session
-        return await self.process_user_response(user_id, search_id, message)
+        return await self._process_user_response(user_id, search_id, message)
