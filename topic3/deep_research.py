@@ -537,7 +537,7 @@ Keep your questions concise and focused on key aspects like:
     - A clear indication whether more research is needed
     
     End your analysis with EITHER:
-    <complete> - if you believe the research query has been sufficiently answered
+    <complete> - if you believe the research query can be sufficiently answered given the search results available so far
     <incomplete> - if more information is needed (and specify what information)"""
     
         # Add context about previous analysis if available
