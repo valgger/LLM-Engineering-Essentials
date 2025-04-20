@@ -569,7 +569,8 @@ Keep your questions concise and focused on key aspects like:
             response = await self.openai_client.chat.completions.create(
                 model=self.model,
                 messages=messages,
-                temperature=0.7
+                temperature=0.7,
+                max_tokens=16384
             )
             
             analysis = response.choices[0].message.content
@@ -677,7 +678,7 @@ Keep your questions concise and focused on key aspects like:
                 model=self.model,
                 messages=messages,
                 temperature=0.7,
-                max_tokens=4000  # Ensure we have enough tokens for a detailed report
+                max_tokens=32768  # Ensure we have enough tokens for a detailed report
             )
             
             report = response.choices[0].message.content
