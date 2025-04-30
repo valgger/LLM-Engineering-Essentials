@@ -34,7 +34,7 @@ LLM Workflows and beyond: from Chaining to AI Agents. LLM Reasoning.
 
 **Project**: Planning and memory summarization; Automating evaluation.
 	
-### Topic 3️⃣ Context
+### [Topic 3️⃣ Context](https://github.com/Nebius-Academy/LLM-Engineering-Essentials/tree/main/topic3)
 
 RAG and its technicalities; vector stores, databases in production. RAG evaluation.
 
