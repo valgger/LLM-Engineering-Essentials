@@ -37,3 +37,7 @@
 * **1.7. Creating an LLM-powered Character** [colab link](https://colab.research.google.com/github/Nebius-Academy/LLM-Engineering-Essentials/blob/main/topic1/1.7_creating_an_llm-powered_character.ipynb)
 
   Build a chatbot based on a fantasy character and explore advanced features like giving it a scratchpad — a space for its own "thoughts."
+
+## Additional reading: 
+
+* [**LLM training overview**](https://nebius-academy.github.io/knowledge-base/llm-training-overview/)
